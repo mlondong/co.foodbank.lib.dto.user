@@ -14,7 +14,8 @@ public class VolunterDTO {
 
     @NotNull
     @NotBlank
-    @Size(min = 8, max = 20, message = "Complete your full name.")
+    @Size(min = 8, max = 20,
+            message = "Complete your full name, min 8 characters.")
     private String name;
 
     @NotNull
@@ -32,7 +33,7 @@ public class VolunterDTO {
 
     @NotBlank
     @NotNull
-    @Pattern(regexp = "^[0-9]{8,8}$")
+    @Pattern(regexp = "^[0-9]{8,8}$", message = "Only numbers for dni min 8.")
     @Size(min = 8, max = 8)
     public String dni;
 
