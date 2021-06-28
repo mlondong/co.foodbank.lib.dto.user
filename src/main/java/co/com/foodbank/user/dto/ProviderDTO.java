@@ -28,13 +28,15 @@ public class ProviderDTO {
 
     @NotNull
     @NotBlank
-    @Size(min = 8, max = 20)
+    @Size(min = 8, max = 20,
+            message = "phone must be numeric between 8 to 20 digits.")
     private String phones;
 
 
     @NotNull
     @NotBlank
-    @Pattern(regexp = "^[0-9]{12,12}$")
+    @Pattern(regexp = "^[0-9]{12,12}$",
+            message = "cuil must be numeric with 12 digits.")
     @Size(min = 12, max = 12)
     public String cuil;
 
