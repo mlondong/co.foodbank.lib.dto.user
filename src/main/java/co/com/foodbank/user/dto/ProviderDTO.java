@@ -1,6 +1,5 @@
 package co.com.foodbank.user.dto;
 
-import java.util.Collection;
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -9,7 +8,6 @@ import javax.validation.constraints.Size;
 import co.com.foodbank.address.dto.AddressDTO;
 import co.com.foodbank.validaton.ValidPassword;
 import co.com.foodbank.validaton.ValidateEmail;
-import co.com.foodbank.vault.dto.VaultDTO;
 
 public class ProviderDTO {
 
@@ -47,7 +45,6 @@ public class ProviderDTO {
     @Valid
     private AddressDTO address;
 
-    public Collection<VaultDTO> sucursal;
 
 
     /**
@@ -71,7 +68,7 @@ public class ProviderDTO {
      */
     public ProviderDTO(String name, String email, String password,
             String phones, String cuil, String legalRepresentation,
-            Collection<VaultDTO> sucursal, AddressDTO address) {
+            AddressDTO address) {
         super();
         this.name = name;
         this.email = email;
@@ -79,7 +76,6 @@ public class ProviderDTO {
         this.phones = phones;
         this.cuil = cuil;
         this.legalRepresentation = legalRepresentation;
-        this.sucursal = sucursal;
         this.address = address;
     }
 
@@ -137,14 +133,6 @@ public class ProviderDTO {
 
     public void setLegalRepresentation(String legalRepresentation) {
         this.legalRepresentation = legalRepresentation;
-    }
-
-    public Collection<VaultDTO> getSucursal() {
-        return sucursal;
-    }
-
-    public void setSucursal(Collection<VaultDTO> sucursal) {
-        this.sucursal = sucursal;
     }
 
 
