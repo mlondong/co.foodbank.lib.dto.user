@@ -89,6 +89,7 @@ public class ProviderDTO {
      * sucursal; }
      */
 
+
     public String getName() {
         return name;
     }
