@@ -20,12 +20,7 @@
 
 	<dependencies>
 
-		<dependency>
-			<groupId>co.com.foodbank.address</groupId>
-			<artifactId>co.foodbank.lib.dto.address</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-
+		<!-- DTOs -->	
 		<dependency>
 			<groupId>co.com.foodbank.vehicule</groupId>
 			<artifactId>co.foodbank.lib.dto.vehicule</artifactId>
@@ -38,11 +33,8 @@
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 
-		<dependency>
-			<groupId>co.com.foodbank.validaton</groupId>
-			<artifactId>co.foodbank.lib.util</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+		<!-- DTOs -->	
+		
 
 
 
