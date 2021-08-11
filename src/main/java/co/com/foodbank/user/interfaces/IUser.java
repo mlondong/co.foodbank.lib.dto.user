@@ -1,4 +1,4 @@
-package co.com.foodbank.user.model;
+package co.com.foodbank.user.interfaces;
 
 import co.com.foodbank.address.dto.IAddress;
 
@@ -7,6 +7,7 @@ import co.com.foodbank.address.dto.IAddress;
  * 
  * @author mauricio.londono@gmail.com co.com.foodbank.user.model 14/05/2021
  */
+
 public interface IUser {
 
     public String getId();

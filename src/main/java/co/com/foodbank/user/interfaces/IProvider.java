@@ -1,4 +1,4 @@
-package co.com.foodbank.user.model;
+package co.com.foodbank.user.interfaces;
 
 import java.util.Collection;
 import co.com.foodbank.vault.dto.IVault;

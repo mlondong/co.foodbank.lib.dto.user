@@ -1,4 +1,4 @@
-package co.com.foodbank.user.model;
+package co.com.foodbank.user.interfaces;
 
 import co.com.foodbank.vehicule.dto.IVehicule;
 
