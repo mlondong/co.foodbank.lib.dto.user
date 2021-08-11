@@ -8,7 +8,14 @@ import javax.validation.constraints.Size;
 import co.com.foodbank.address.dto.AddressDTO;
 import co.com.foodbank.validaton.ValidPassword;
 import co.com.foodbank.validaton.ValidateEmail;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+/**
+ * @author mauricio.londono@gmail.com co.com.foodbank.user.dto 10/08/2021
+ */
+@Data
+@NoArgsConstructor
 public class ProviderDTO {
 
     @NotNull
@@ -46,105 +53,6 @@ public class ProviderDTO {
     private AddressDTO address;
 
     // private Collection<VaultDTO> sucursal;
-
-
-
-    /**
-     * Default constructor
-     */
-    public ProviderDTO() {}
-
-
-    /**
-     * Constructor with parameters.
-     * 
-     * @param name
-     * @param email
-     * @param password
-     * @param phones
-     * @param cuil
-     * @param legalRepresentation
-     * @param sucursal
-     * @param address
-     */
-    public ProviderDTO(String name, String email, String password,
-            String phones, String cuil, String legalRepresentation,
-            AddressDTO address) {
-        super();
-        this.name = name;
-        this.email = email;
-        this.password = password;
-        this.phones = phones;
-        this.cuil = cuil;
-        this.legalRepresentation = legalRepresentation;
-        this.address = address;
-        // this.sucursal = suc;
-
-    }
-
-    /*
-     * public Collection<VaultDTO> getSucursal() { return sucursal; }
-     * 
-     * public void setSucursal(Collection<VaultDTO> sucursal) { this.sucursal =
-     * sucursal; }
-     */
-
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public AddressDTO getAddress() {
-        return address;
-    }
-
-    public void setAddress(AddressDTO address) {
-        this.address = address;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public String getPhones() {
-        return phones;
-    }
-
-    public void setPhones(String phones) {
-        this.phones = phones;
-    }
-
-    public String getCuil() {
-        return cuil;
-    }
-
-    public void setCuil(String cuil) {
-        this.cuil = cuil;
-    }
-
-    public String getLegalRepresentation() {
-        return legalRepresentation;
-    }
-
-    public void setLegalRepresentation(String legalRepresentation) {
-        this.legalRepresentation = legalRepresentation;
-    }
 
 
 
