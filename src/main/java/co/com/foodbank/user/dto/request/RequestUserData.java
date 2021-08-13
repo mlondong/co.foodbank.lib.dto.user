@@ -1,4 +1,4 @@
-package co.com.foodbank.user.request;
+package co.com.foodbank.user.dto.request;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;

@@ -1,4 +1,4 @@
-package co.com.foodbank.user.interfaces;
+package co.com.foodbank.user.dto.interfaces;
 
 /**
  * @author mauricio.londono@gmail.com co.com.foodbank.user.v1.model 15/05/2021

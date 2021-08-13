@@ -1,7 +1,7 @@
-package co.com.foodbank.user.interfaces;
+package co.com.foodbank.user.dto.interfaces;
 
 import java.util.Collection;
-import co.com.foodbank.vault.dto.IVault;
+import co.com.foodbank.vault.interfaces.IVault;
 
 /**
  * @author mauricio.londono@gmail.com co.com.foodbank.user.v1.model 15/05/2021

@@ -1,6 +1,6 @@
-package co.com.foodbank.user.interfaces;
+package co.com.foodbank.user.dto.interfaces;
 
-import co.com.foodbank.address.interfaces.IAddress;
+import co.com.foodbank.address.dto.interfaces.IAddress;
 
 /**
  * Interface IUser to handle methods getters in User.
