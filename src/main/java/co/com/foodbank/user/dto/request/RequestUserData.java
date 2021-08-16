@@ -10,6 +10,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
+ * Class to represent a minimal information about User.
+ * 
  * @author mauricio.londono@gmail.com co.com.foodbank.user.model 9/08/2021
  */
 @Data

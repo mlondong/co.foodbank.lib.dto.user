@@ -41,7 +41,7 @@ public class VolunterDTO {
     @NotBlank
     @NotNull
     @Pattern(regexp = "^[0-9]{8,8}$", message = "Only numbers for dni min 8.")
-    @Size(min = 8, max = 8)
+    @Size(min = 8, max = 20, message = "dni must be numeric.")
     public String dni;
 
 
