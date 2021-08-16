@@ -3,6 +3,7 @@ package co.com.foodbank.user.dto;
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import co.com.foodbank.address.dto.AddressDTO;
 import co.com.foodbank.validaton.ValidPassword;
@@ -32,7 +33,9 @@ public class BeneficiaryDTO {
 
     @NotNull
     @NotBlank
-    @Size(min = 8, max = 20)
+    @Pattern(regexp = "^[0-9]{0,20}$", message = "Phone only numbers.")
+    @Size(min = 8, max = 20,
+            message = "phone must be numeric between 8 to 20 digits.")
     private String phones;
 
     @NotNull

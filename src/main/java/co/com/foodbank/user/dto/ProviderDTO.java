@@ -33,6 +33,7 @@ public class ProviderDTO {
 
     @NotNull
     @NotBlank
+    @Pattern(regexp = "^[0-9]{0,20}$", message = "Phone only numbers.")
     @Size(min = 8, max = 20,
             message = "phone must be numeric between 8 to 20 digits.")
     private String phones;
