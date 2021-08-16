@@ -8,6 +8,7 @@ import co.com.foodbank.address.dto.interfaces.IAddress;
  * @author mauricio.londono@gmail.com co.com.foodbank.user.model 14/05/2021
  */
 
+
 public interface IUser {
 
     public String getId();
