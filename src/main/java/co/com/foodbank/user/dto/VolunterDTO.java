@@ -21,7 +21,7 @@ public class VolunterDTO {
 
     @NotNull
     @NotBlank
-    @Size(min = 8, max = 20,
+    @Size(min = 5, max = 30,
             message = "Complete your full name, min 8 characters.")
     private String name;
 

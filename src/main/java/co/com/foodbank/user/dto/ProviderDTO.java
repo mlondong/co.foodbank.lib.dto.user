@@ -20,7 +20,7 @@ public class ProviderDTO {
 
     @NotNull
     @NotBlank
-    @Size(min = 8, max = 20, message = "Complete your full name.")
+    @Size(min = 5, max = 30, message = "Complete your full name.")
     private String name;
 
     @NotNull
@@ -52,9 +52,6 @@ public class ProviderDTO {
 
     @Valid
     private AddressDTO address;
-
-    // private Collection<VaultDTO> sucursal;
-
 
 
 }

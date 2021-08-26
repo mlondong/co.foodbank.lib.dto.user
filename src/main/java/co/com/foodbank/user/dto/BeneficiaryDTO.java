@@ -20,7 +20,7 @@ public class BeneficiaryDTO {
 
     @NotNull
     @NotBlank
-    @Size(min = 8, max = 20, message = "Complete your full name.")
+    @Size(min = 5, max = 40, message = "Complete your full name.")
     private String name;
 
     @NotNull
